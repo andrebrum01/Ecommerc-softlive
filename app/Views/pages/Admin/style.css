@@ -1,0 +1,145 @@
+/* UI DESIGN
+----------FONT WEB PC-------------
+TITULO: 36PX BOLD
+SUBTITULO: 24PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+----------FONT WEB MOBILE-------------
+TITULO: 24PX BOLD
+SUBTITULO: 18PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+
+----------NEGATIVE SPACE WEB PC-------------
+SECTION: 64PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 16PX 
+ELEMENT IN CARD: 8PX
+
+----------NEGATIVE SPACE WEB MOBILE-------------
+SECTION: 24PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 8PX 
+ELEMENT IN CARD: 4PX
+
+SEGUIR O PADRÃO
+l = X
+w = 2X
+*/
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+
+}
+
+section{
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+h1{
+    position: relative;
+}
+h1::after{
+    content:" ";
+    width: 3rem;
+    height: 5px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}
+.containerHeader{
+    padding-bottom: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.containerHeader .btnModal{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.containerHeader .btnModal:hover{
+    background-color: var(--terciaryColor);
+}
+
+table{
+    min-width: 100%;
+    overflow-x: auto;
+}
+
+table{
+    background-color: var(--primaryColor);
+}
+th{
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color:var(--secondaryColor);
+    padding:8px 16px ;
+}
+th:hover{
+    background-color: var(--terciaryColor);
+    /* color:var(--primaryColor); */
+}
+td{
+    background-color: white;
+    border-right: var(--secondaryColor);
+    padding:  8px 16px;
+}
+
+
+form{
+    display:grid;
+    /* gap:16px; */
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(7, auto);
+    padding: 16px;
+}
+
+form .containerInput{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+form .containerInput input{
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--primaryColor);
+}
+form .containerInput span{
+    color:var(--redColor);
+    font-size: 12px;    
+}
+form .containerInput textarea{
+    height: 6rem;
+    border: 1px solid var(--primaryColor);
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+form h2{
+    margin: 0px auto;
+    padding-bottom: 8px;
+}
+
+form button{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--primaryColor);
+}

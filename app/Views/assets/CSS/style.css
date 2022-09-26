@@ -1,0 +1,86 @@
+/* UI DESIGN
+----------FONT WEB PC-------------
+TITULO: 36PX BOLD
+SUBTITULO: 24PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+----------FONT WEB MOBILE-------------
+TITULO: 24PX BOLD
+SUBTITULO: 18PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+
+----------NEGATIVE SPACE WEB PC-------------
+SECTION: 64PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 16PX 
+ELEMENT IN CARD: 8PX
+
+----------NEGATIVE SPACE WEB MOBILE-------------
+SECTION: 24PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 8PX 
+ELEMENT IN CARD: 4PX
+
+SEGUIR O PADRÃO
+l = X
+w = 2X
+*/
+
+/* variavel global */
+:root{
+    --primaryColor:#011936;
+    --secondaryColor:#4599FF;
+    --terciaryColor:#082b55;
+    --redColor: crimson;
+    --whiteColor: white;
+
+    --fontGlobal:'Poppins', sans-serif;
+
+    --tamNavBar:10vh;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--fontGlobal);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+i{
+    cursor: pointer;
+    -webkit-text-stroke: 1px;
+}
+
+a{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    height: auto;
+}
+
+img{
+    user-select: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+}

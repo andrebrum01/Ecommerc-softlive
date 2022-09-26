@@ -1,0 +1,134 @@
+/* UI DESIGN
+----------FONT WEB PC-------------
+TITULO: 36PX BOLD
+SUBTITULO: 24PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+----------FONT WEB MOBILE-------------
+TITULO: 24PX BOLD
+SUBTITULO: 18PX BOLC
+CORPO: 14PX REGULAR
+LEGENDA: 12PX REGULAR
+
+
+----------NEGATIVE SPACE WEB PC-------------
+SECTION: 64PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 16PX 
+ELEMENT IN CARD: 8PX
+
+----------NEGATIVE SPACE WEB MOBILE-------------
+SECTION: 24PX
+ELEMENTOS: 32PX
+ELEMENT CARD: 8PX 
+ELEMENT IN CARD: 4PX
+
+SEGUIR O PADRÃO
+l = X
+w = 2X
+*/
+
+/* variavel global */
+
+.containerLogin{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.containerLogin .background{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogin .background img{
+    max-height: 50vh;
+}
+
+.containerLogin .foreground img{
+    height: 5vh;
+    min-height: 30px;
+}
+.containerLogin .foreground{
+    flex: 1;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogin .foreground form{
+    color: var(--whiteColor);
+    display: grid;
+    gap: 32px;
+    padding:48px 32px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,.5);
+    align-items: center;
+    justify-items: center;
+    min-width: 70%;
+}
+.containerInput .foreground form label{
+    cursor: pointer;
+}
+
+.containerLogin .foreground .containerInput{
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+
+}
+.containerLogin .foreground form input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.containerCheckbox label{
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+.containerCheckbox input[type=checkbox]{
+    display: none;
+}
+.containerCheckbox i{
+    visibility: hidden;
+    color: var(--whiteColor);
+    font-size: 18px;
+}
+.containerCheckbox input[type=checkbox]:checked ~ label i{
+    visibility: visible;
+}
+
+.containerCheckbox div{
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin-right: 16px ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondaryColor);
+    background-color: none;
+}
+.containerCheckbox input[type=checkbox]:checked ~ label div{
+    background-color: var(--secondaryColor);
+}
+
+.containerLogin .foreground button{
+    border: 2px solid #033C82;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--terciaryColor);
+    color:var(--whiteColor);
+}
+
+.containerLogin .foreground button:hover{
+    background-color: #033C82;
+}

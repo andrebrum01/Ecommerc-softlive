@@ -1,0 +1,72 @@
+/*          UI DESIGN
+----------FONT WEB PC-------------
+    TITULO: 36PX BOLD
+    SUBTITULO: 24PX BOLD
+    CORPO: 14PX REGULAR
+    LEGENDA: 12PX REGULAR
+
+----------FONT WEB MOBILE-------------
+    TITULO: 24PX BOLD
+    SUBTITULO: 18PX BOLD
+    CORPO: 14PX REGULAR
+    LEGENDA: 12PX REGULAR
+
+
+----------NEGATIVE SPACE WEB PC-------------
+    SECTION: 64PX
+    ELEMENTOS: 32PX
+    ELEMENT CARD: 16PX 
+    ELEMENT IN CARD: 8PX
+
+----------NEGATIVE SPACE WEB MOBILE-------------
+    SECTION: 24PX
+    ELEMENTOS: 32PX
+    ELEMENT CARD: 8PX 
+    ELEMENT IN CARD: 4PX
+
+===============SEGUIR O PADRÃO===============
+    WIDTH = X
+    HEIGHT = 2X
+*/
+
+
+
+html{
+    min-height: calc(100vh - max(var(--tamNavBar),60px));
+    padding-top:max(var(--tamNavBar),60px);
+}
+
+.Banner .imgBanner{
+    width: 100vw;
+    height: 60vh;
+    min-height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto  100%;
+}
+
+section{
+    padding:64px 32px 0px 32px;
+    display: grid;
+    align-items: center;
+}
+
+section:nth-last-child(1){
+    padding-bottom:64px;
+}
+
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 2;
+    padding: 14px;
+}
+
+h1{
+    color:var(--primaryColor);
+    padding-left: 14px;
+}

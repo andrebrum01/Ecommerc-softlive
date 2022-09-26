@@ -1,0 +1,103 @@
+
+.navbar{
+    background-color: var(--primaryColor);
+    height: var(--tamNavBar);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 8px 32px;
+    min-height: 60px;
+}
+
+.navbar img{
+    height: 5vh;
+    min-height: 30px;
+}
+
+.navbar .containetInput{
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--primaryColor);
+    margin-left: 16px;
+}
+
+.navbar .containetInput input{
+    border: none;
+    padding: 5px 10px;
+    min-width: 20vw;
+    outline: none;
+}
+
+.navbar .containetInput input::placeholder{
+    color: #808080;
+}
+
+.navbar .containetInput:focus-within{
+    box-shadow:inset 0px 0px 2px black;
+}
+
+.navbar .containerNavbar{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    align-items: center;
+    column-gap:16px;
+    color: var(--whiteColor);
+}
+
+.navbar .containerNavbar a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+.navbar .containerNavbar a:hover{
+    color: var(--secondaryColor);
+}
+.navbar .containerNavbar .name{
+    font-size: 14px;
+}
+.navbar .containerNavbar .name i{
+    -webkit-text-stroke: 0px;
+}
+.navbar .containerNavbar span{
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    width: 43px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primaryColor);
+    font-weight: bold;
+    -webkit-text-stroke: 1px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.navbar .containerNavbar span::after{
+    content: attr(quant-shop);
+    position: absolute;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 100%;
+    top:10px;
+    right:25px;
+    color: white;
+    padding: 3px;
+    font-weight: lighter;
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
